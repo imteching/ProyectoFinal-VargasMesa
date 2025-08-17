@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nombre": "Figura Sakura",
+    "precio": 35000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/a1/f7/e4/a1f7e44119646d63b69b901f5ea2d82a.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Figura Shaoran",
+    "precio": 32000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/8c/af/35/8caf350c1b0dfe4aa2866c8324d6315c.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Báculo Estrella",
+    "precio": 18000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/05/96/37/0596376bafb95b5cf33da0a135725237.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Báculo Clow",
+    "precio": 18000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/05/96/37/0596376bafb95b5cf33da0a135725237.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Peluche Kero",
+    "precio": 15000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/68/2a/ca/682aca11c5b2080e22fb1a51e677c5a3.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Peluche Spinel",
+    "precio": 15000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/1a/80/b6/1a80b6a4375457661b05bd69b3764d93.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Collar llave Clow",
+    "precio": 8000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/e4/79/e1/e479e171d3ecd54148ee73d7dbae728a.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Collar Llave Estrella",
+    "precio": 8000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/21/1f/73/211f738dc25ded087095c93a6e7d8345.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Set Cartas Clow",
+    "precio": 22000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/4a/3d/42/4a3d42251f2f10642e5a1a17e4f83c92.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Set Stickers Sakura",
+    "precio": 18000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/41/aa/05/41aa054bd46f938ed38cc4fcd22fdcef.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Mochila Sakura",
+    "precio": 5000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/8b/14/a1/8b14a17f125c387fe1588da6d518280d.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Bolso Clow",
+    "precio": 23000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/b6/de/a0/b6dea0a672a82e4801ee89d745db2075.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Taza Sakura",
+    "precio": 10000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/25/9d/00/259d0025259e0b5d41882102180d7272.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Sakura Tote Bag",
+    "precio": 10000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/5e/e4/42/5ee442389d2e5fc4141bdc834d00cc30.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Póster Sakura",
+    "precio": 6000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/4d/d4/53/4dd453e6843e56b728834996e8bac492.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Reloj de bolsillo",
+    "precio": 25000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/3b/1a/7c/3b1a7c3c21e9b6c0b547901c014185ea.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Reloj de pulsera",
+    "precio": 35000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/c8/9a/f6/c89af6f9199906455bf35ba8fec48596.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Llaveros Cartas Clow",
+    "precio": 15000,
+    "cantidad": 1,
+    "imagen": "https://i.pinimg.com/736x/41/a2/bb/41a2bb15c040849a745a375956ad04fa.jpg"
+  }
+]

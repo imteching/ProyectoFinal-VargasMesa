@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://i.pinimg.com/1200x/97/2b/cd/972bcd7ce2fc40959f0be9ac755faf1d.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff69b4;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mensaje {
+  display: none;
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+#filtros {
+  margin-bottom: 20px;
+}
+
+#filtroNombre {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+#filtroPrecio {
+  padding: 8px;
+}
+
+.no-resultados {
+  grid-column:  1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d63384;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border: 2px solid #f1c4d4;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c92a65;
+}
+
+#resumen-compra {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 2px solid #e78fb3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+#resumen-compra h2 {
+  margin-bottom: 1rem;
+  color: #e34f87;
+  text-align: center;
+}
+
+#total p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
