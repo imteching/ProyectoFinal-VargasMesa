@@ -1,16 +1,48 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productosData = [];
 
-
 function mostrarProductos() {
   fetch("json/productos.json")
-  .then((res) => res.json())
-  .then((data) => {
-    productosData = data;
-    renderizarProductos(productosData);
-  });
-}
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("❌ Error al cargar los productos.");
+      }
+      return res.json();
+    })
+    .then((data) => {
+      productosData = data;
+      renderizarProductos(productosData);
 
+      Swal.fire({
+        icon: "success",
+        title: "Productos cargados",
+        text: "✅ Los productos se han cargado correctamente.",
+        timer: 2000,
+        showConfirmButton: false,
+      });
+    })
+    .catch((error) => {
+      const contenedor = document.getElementById("productos");
+      contenedor.innerHTML = `<div class="error">
+    ⚠ Ocurrió un problema: ${error.message}
+    </div>`;
+
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: `⚠ Ocurrió un problema: ${error.message}`,
+      });
+    })
+    .finally(() => {
+      Swal.fire({
+        icon: "info",
+        title: "Proceso finalizado",
+        text: "ℹ La carga de productos ha finalizado.",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+    });
+}
 function renderizarProductos(lista) {
   const contenedor = document.getElementById("productos");
   contenedor.innerHTML = "";
@@ -32,10 +64,10 @@ function renderizarProductos(lista) {
         <h3>${prod.nombre}</h3>
         <p>$${prod.precio.toLocaleString()}</p>
         <button onclick="agregarAlCarrito(${prod.id}, '${prod.nombre}', ${
-          prod.precio
-        }, '${prod.imagen}')">Agregar al carrito</button>
+      prod.precio
+    }, '${prod.imagen}')">Agregar al carrito</button>
         `;
-        contenedor.appendChild(card);
+    contenedor.appendChild(card);
   });
 }
 
@@ -61,12 +93,10 @@ function aplicarFiltros() {
   const nombreInput = document.getElementById("filtroNombre");
   const precioInput = document.getElementById("filtroPrecio");
 
-  const nombreFiltro = nombreInput && nombreInput.value
-  ? nombreInput.value.toLowerCase()
-  : "";
-  const precioFiltro = precioInput && precioInput.value
-  ? parseFloat(precioInput.value)
-  : NaN;
+  const nombreFiltro =
+    nombreInput && nombreInput.value ? nombreInput.value.toLowerCase() : "";
+  const precioFiltro =
+    precioInput && precioInput.value ? parseFloat(precioInput.value) : NaN;
 
   let filtrados = productosData.filter((prod) => {
     const coincideNombre = prod.nombre.toLowerCase().includes(nombreFiltro);

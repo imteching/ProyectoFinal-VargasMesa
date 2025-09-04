@@ -39,15 +39,53 @@ function mostrarCarrito() {
 }
 
 function eliminarProducto(id) {
-  carrito = carrito.filter((item) => item.id !== id);
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-  mostrarCarrito();
+  Swal.fire({
+    title: "¿Eliminar producto?",
+    text: "Este producto será eliminado de tu carrito",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Si, eliminar",
+    cancelButtonText: "Cancelar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito = carrito.filter((item) => item.id !== id);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      mostrarCarrito();
+
+      Swal.fire({
+        icon: "success",
+        title: "Producto eliminado",
+        text: "✅ El producto se eliminó correctamente.",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+    }
+  });
 }
 
 function vaciarCarrito() {
-  carrito = [];
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-  mostrarCarrito();
+  Swal.fire({
+    title: "¿Vaciar carrito?",
+    text: "Se eliminarán todos los productos",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sí, vaciar",
+    cancelButtonText: "Cancelar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito = [];
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      mostrarCarrito();
+
+      Swal.fire({
+        icon: "success",
+        title: "Carrito vacío",
+        text: "🛒 Se eliminaron todos los productos.",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+    }
+  });
 }
 
 mostrarCarrito();

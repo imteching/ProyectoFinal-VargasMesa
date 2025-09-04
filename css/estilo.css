@@ -48,7 +48,7 @@ main {
 }
 
 .no-resultados {
-  grid-column:  1 / -1;
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 1.2rem;
   color: #d63384;
@@ -126,4 +126,119 @@ button:hover {
 #total p {
   margin: 0.5rem 0;
   font-size: 1.1rem;
+}
+
+/* checkout */
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 80%;
+  padding: 1rem;
+}
+
+#resumenCompra {
+  flex: 1 1 45%;
+  padding: 1.5rem;
+  background: #fff0f6;
+  border: 2px solid #ff66b2;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+}
+
+#resumenCompra h2 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 1rem;
+}
+
+#resumenCompra ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#resumenCompra li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ffcce6;
+  font-size: 1rem;
+}
+
+#resumenCompra li:last-child {
+  border-bottom: none;
+}
+
+#resumenCompra div {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+#resumenCompra h3 {
+  color: #b30059;
+  margin-top: 0.5rem;
+}
+
+/* formulario checkout */
+#checkoutForm {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+}
+
+#checkoutForm h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d63384;
+}
+
+#checkoutForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#checkoutForm input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#checkoutForm input:focus {
+  border-color: #ff66b2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 102, 178, 0.6);
+}
+
+#checkoutForm button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff66b2, #ff3385);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#checkoutForm button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff3385, #e60073);
+}
+
+@media (max-width: 1000px) {
+  .checkout-container {
+    flex-direction: column;
+  }
 }

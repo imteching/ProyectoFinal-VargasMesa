@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Completar compra</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📝 Finalizar compra</h1>
+      <nav>
+        <a href="./carrito.html">🔙 Volver al carrito</a>
+      </nav>
+    </header>
+
+    <main class="checkout-container">
+      <section id="resumenCompra"></section>
+      <form id="checkoutForm">
+        <h2>🚚 Datos de envío</h2>
+        <label for="nombre">👤 Mi nombre es:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">📧 Mi correo es:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefono">🤳🏻 Mi WhatsApp es:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <label for="direccion">🏠 Mi dirección es:</label>
+        <input type="text" id="direccion" name="direccion" required />
+
+        <label for="direccion">📍 Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required />
+
+        <button type="submit">✅ Finalizar compra</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../javascript/checkout.js"></script>
+  </body>
+</html>
